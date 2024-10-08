@@ -1,0 +1,406 @@
+/********** first page ************/
+
+.first_page{
+  background: url("public/imgs/BG.png") no-repeat;
+  background-size: cover;
+
+    .page1_content{
+      background: transparent;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+        .logo1{
+          width: 30vw;
+          position: absolute;
+          margin-top:25vh;
+          margin-left: 10vw;
+        }
+
+        .first_page_pic{
+          width: 100%;
+          height: auto;
+        }
+
+
+        .page1_wrapper{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 2rem;
+
+            span{
+              width: 31.8rem;
+              font-family: oswald, sans-serif;
+              border-bottom: 2px solid #fff;
+              font-size: 3vw;
+            }
+
+            p{
+              width: 25vw;
+              flex-shrink: 0;
+              color: #FFF;
+              font-family: "Libre Baskerville", serif;
+              font-size: 0.7vw;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 232%;
+              letter-spacing: 0.132rem;
+            }
+        }
+    }
+}
+
+/********** second page ************/
+
+.sec_page{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+    .sec_heading{
+      background: #863939;
+      width: 100%;
+      height: 12%;
+      display: flex;
+      align-items: center;
+      align-self:start;
+
+        span{
+          font-size: 5vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+    }
+
+    .whatever {
+      position: relative;
+
+        .colon1{
+          width: 4.5vw;
+          height: 7.3vh;
+        }
+
+        .sec_content{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+            p{
+              width: 60%;
+              font-size: 1vw;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 2em;
+              letter-spacing: 0.22rem;
+            }
+        }
+
+        .colon2 {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+
+            img{
+              width: 4.5vw;
+              height: 7.3vh;
+            }
+        }
+    }
+
+    .sec_img {
+      height:35%;
+
+        img{
+          width: 30vw;
+        }
+    }
+}
+
+/********** third page ************/
+
+.third_page{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+
+    .third_pic{
+      width: 100%;
+      height: 100%;
+    }
+
+    .third_content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4rem;
+
+        button{
+          background: transparent;
+          border: none;
+          transition: transform 0.4s ease;
+
+            span{
+              font-family: "Libre Baskerville", serif;
+              text-transform: uppercase;
+              font-size: 4vw;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+
+            &:hover{
+              transform: scale(0.9);
+            }
+        }
+
+        .third_img{
+          background-size: cover;
+          height: 103rem;
+          width: 100%;
+        }
+
+        .third_heading{
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+
+            span{
+              font-family: "Libre Baskerville", serif;
+              font-size: 2vw;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+        }
+    }
+}
+
+/********** First page of Sec************/
+
+.first_page_sec{
+
+  .wrap{
+    display:grid;
+    grid-template-areas: " column-1 column-2";
+    grid-auto-columns: 1fr 1fr;
+    height: 100vh;
+
+      .column-1{
+        height: 100vh;
+        grid-area: column-1;
+
+          img{
+            max-height: 99vh;
+            width: 15.8vw;
+          }
+      }
+
+      .column-2{
+        margin-top: 5vh;
+        grid-area: column-2;
+
+          img{
+            position: absolute;
+            height: 90vh;
+            width: 16.6vw;
+          }
+
+          .column_content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+
+              span{
+                margin-top: 1vh;
+                text-align: center;
+                font-family: Oswald, serif;
+                font-size: 1.7em;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.170em;
+              }
+
+              p{
+                width: 80%;
+                height: 70vh;
+                color: #FFF;
+                font-size: 1.3rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 232%; /* 3.48rem */
+                letter-spacing: 0.065em;
+              }
+          }
+      }
+  }
+}
+
+/********** Second page of Sec************/
+.sec_page_sec{
+
+  .wrap-2{
+    background: url("public/imgs/sargent.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+      .header h1{
+        font-family: "Libre Baskerville", serif;
+        font-size: 2.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.384rem;
+        position: relative;
+        display: inline-block;
+        top:4vh;
+
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.13vh;
+            background-color: white;
+            left: 0;
+          }
+
+          &::before {
+            top:-1.5vh ;
+          }
+
+          &::after {
+            bottom: -1.5vh;
+          }
+      }
+
+      .sec_content{
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+          h1{
+            width: 15.6vw;
+            text-align: center;
+            font-family: Oswald, serif;
+            font-size: 1.4vw;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 1.2vh;
+            line-height: 5.7vh;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+          }
+
+          p{
+            width: 15.6vw;
+            text-align: center;
+            font-size: 0.52vw;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            letter-spacing: 0.112em;
+          }
+      }
+  }
+}
+
+/********** Third page of Sec************/
+
+.third_page_sec{
+  .third_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+      .third_title{
+        font-family: Oswald, serif;
+        font-size: 1.3vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.135em;
+
+          &::after{
+            display: block;
+            content: "";
+            width: 120%;
+            margin-top:1rem;
+            height: 0.2rem;
+            background-color: #863939;
+            margin-left: 1rem;
+            position: relative;
+            vertical-align: middle;
+          }
+
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            background-color: #863939;
+            border-radius: 50%;
+            position: relative;
+            top: 3.3rem;
+            margin-right: 0.4rem;
+          }
+      }
+
+      .flag{
+        width: 6vw;
+      }
+  }
+
+  .wrap-3{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+
+      .qrcode{
+        width: 7vw;
+      }
+
+      ul{
+        font-family: Oswald, serif;
+        font-size: 1.1vw;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.284rem;
+
+          li{
+            font-family: "Times New Roman", serif;
+            font-size: 0.5vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.9em;
+            letter-spacing: 0.124em;
+          }
+      }
+
+      .location_img img{
+        width: 85%;
+      }
+  }
+}

@@ -1,0 +1,53 @@
+:root {
+    font-size: 10px;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+    list-style: none;
+    -webkit-user-drag: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+body html{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    background: #252324;
+    display: grid;
+    grid-template-areas:
+     "header header header"
+     "first_page sec_page third_page"
+     "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+
+        header {
+            grid-area: header;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .first_page{
+            grid-area: first_page;
+        }
+
+        .sec_page{
+            grid-area: sec_page;
+        }
+
+        .third_page{
+            grid-area: third_page;
+        }
+
+}
+
