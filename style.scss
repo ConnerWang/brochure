@@ -1,5 +1,10 @@
 :root {
     font-size: 10px;
+    --bg-color:#252324;
+    --main-color:#863939;
+    --font-color:#ffffff;
+    --third-color:#252324;
+    --text-color:#ffffff;
 }
 
 *, *::before, *::after {
@@ -19,35 +24,42 @@ body html{
     height: 100vh;
 }
 
+.lightmode{
+    --bg-color:#C93636;
+    --main-color:#FFEBD1;
+    --third-color:#FFEBD1;
+    --text-color:#863939;
+}
+
 .container{
-    background: #252324;
+    background: var(--bg-color);
     display: grid;
     grid-template-areas:
-     "header header header"
-     "first_page sec_page third_page"
-     "footer footer footer";
+   "header header header"
+   "first_page sec_page third_page"
+   "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr auto;
 
-        header {
-            grid-area: header;
-        }
+    header {
+        grid-area: header;
+    }
 
-        footer {
-            grid-area: footer;
-        }
+    footer {
+        grid-area: footer;
+    }
 
-        .first_page{
-            grid-area: first_page;
-        }
+    .first_page{
+        grid-area: first_page;
+    }
 
-        .sec_page{
-            grid-area: sec_page;
-        }
+    .sec_page{
+        grid-area: sec_page;
+    }
 
-        .third_page{
-            grid-area: third_page;
-        }
+    .third_page{
+        grid-area: third_page;
+    }
 
 }
 

@@ -1,3 +1,4 @@
+@import "style.scss";
 /********** first page ************/
 
 .first_page{
@@ -327,6 +328,7 @@
 /********** Third page of Sec************/
 
 .third_page_sec{
+  background-color: var(--third-color);
   .third_content{
     display: flex;
     flex-direction: row;
@@ -384,6 +386,7 @@
       }
 
       ul{
+        color: var(--text-color);
         font-family: Oswald, serif;
         font-size: 1.1vw;
         font-style: normal;
@@ -391,6 +394,7 @@
         letter-spacing: 0.284rem;
 
           li{
+            color: var(--text-color);
             font-family: "Times New Roman", serif;
             font-size: 0.5vw;
             font-style: normal;
