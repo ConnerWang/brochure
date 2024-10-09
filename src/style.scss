@@ -49,15 +49,15 @@ body html{
             grid-area: footer;
         }
 
-        .first_page{
+        .first_page, .first_page_sec{
             grid-area: first_page;
         }
 
-        .sec_page{
+        .sec_page, .sec_page_sec{
             grid-area: sec_page;
         }
 
-        .third_page{
+        .third_page, .third_page_sec{
             grid-area: third_page;
         }
 

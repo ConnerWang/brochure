@@ -1,7 +1,10 @@
+import './src/foundation.scss'
 import './src/style.scss'
 import './src/footer.scss'
 import './src/header.scss'
-import './src/foundation.scss'
+import './src/responsive.scss'
+
+
 
 let lightmode = localStorage.getItem('lightmode');
 const themeSwitch = document.getElementById('theme-switch');

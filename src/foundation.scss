@@ -1,6 +1,8 @@
 @import "style.scss";
 /********** first page ************/
 
+
+
 .first_page{
   background: url("../public/imgs/background.png") no-repeat;
   background-size: cover;
@@ -36,16 +38,21 @@
             span{
               width: 31.8rem;
               font-family: oswald, sans-serif;
-              border-bottom: 2px solid var(--font-color);
-              font-size: 3vw;
+              font-size: 2.5em;
+
+               &::after{
+                 content: "";
+                 display: block;
+                 width: 70%;
+                 height: 0.15rem;
+                 background-color:var(--font-color);
+               }
             }
 
             p{
-              width: 25vw;
-              flex-shrink: 0;
               color: var(--font-color);
               font-family: "Libre Baskerville", serif;
-              font-size: 0.7vw;
+              font-size: 1.2rem;
               font-style: normal;
               font-weight: 400;
               line-height: 232%;
@@ -74,10 +81,10 @@
       align-items: center;
       align-self:start;
 
-        span{
+      span{
           color: var(--text-color);
           font-family: "Times New Roman", serif;
-          font-size: 5vw;
+          font-size: 7.6rem;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -88,8 +95,8 @@
       position: relative;
 
         .colon1{
-          width: 4.5vw;
-          height: 7.3vh;
+          width: 7rem;
+          height: 5rem;
         }
 
         .sec_content{
@@ -101,7 +108,7 @@
             p{
               font-family: "Times New Roman", serif;
               width: 60%;
-              font-size: 1vw;
+              font-size: 1.6rem;
               font-style: normal;
               font-weight: 400;
               line-height: 2em;
@@ -115,17 +122,21 @@
           bottom: 0;
 
             img{
-              width: 4.5vw;
-              height: 7.3vh;
+              width: 7rem;
+              height: 5rem;
             }
         }
     }
 
     .sec_img {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
       height:35%;
 
         img{
-          width: 30vw;
+          width: 90%;
         }
     }
 }
@@ -228,7 +239,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 4rem;
 
               span{
                 margin-top: 1vh;
