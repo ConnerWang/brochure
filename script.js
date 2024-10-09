@@ -1,30 +1,30 @@
-import './style.scss'
+import './src/style.scss'
 import './src/footer.scss'
 import './src/header.scss'
 import './src/foundation.scss'
 
-document.addEventListener('DOMContentLoaded', function() {
-    let light_mode = localStorage.getItem('light_mode');
+    let lightmode = localStorage.getItem('lightmode');
     const themeSwitch = document.getElementById('theme-switch');
 
     const enableLightmode = () => {
-        document.body.classList.add('light-mode');  // 统一使用 'light-mode'
-        localStorage.setItem('light_mode', 'active');
+        document.body.classList.add('lightmode');  // 统一使用 'light-mode'
+        localStorage.setItem('lightmode', 'active');
     };
 
     const disableLightmode = () => {
         document.body.classList.remove('light-mode');
-        localStorage.setItem('light_mode', null);
+        localStorage.setItem('lightmode', null);
     };
 
-    if (light_mode === 'active') enableLightmode();
+    if (lightmode === 'active') enableLightmode();
 
     themeSwitch.addEventListener("click", () => {
-        light_mode = localStorage.getItem('light_mode');
-        if (light_mode !== "active") {
+        lightmode = localStorage.getItem('light_mode');
+        if (lightmode !== "active") {
+            console.log("Enabling light mode");
             enableLightmode();
         } else {
+            console.log("Disabling light mode");
             disableLightmode();
         }
     });
-});
