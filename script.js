@@ -3,22 +3,28 @@ import './src/footer.scss'
 import './src/header.scss'
 import './src/foundation.scss'
 
-let button = document.querySelector('.theme-switch');
+document.addEventListener('DOMContentLoaded', function() {
+    let light_mode = localStorage.getItem('light_mode');
+    const themeSwitch = document.getElementById('theme-switch');
 
+    const enableLightmode = () => {
+        document.body.classList.add('light-mode');  // 统一使用 'light-mode'
+        localStorage.setItem('light_mode', 'active');
+    };
 
-button.addEventListener('click',function(){
+    const disableLightmode = () => {
+        document.body.classList.remove('light-mode');
+        localStorage.setItem('light_mode', null);
+    };
 
-    let currentTheme = document.querySelector('html').getAttribute('data-theme')
-    if (currentTheme === 'light'){
+    if (light_mode === 'active') enableLightmode();
 
-        document.querySelector('html').setAttribute('data-theme','dark')
-        sessionStorage.setItem('selectedTheme','dark')
-    }else{
-        document.querySelector('html').setAttribute('data-theme','light')
-        sessionStorage.setItem('selectedTheme','light')
-    }
-})
-
-if(sessionStorage.getItem('selectedTheme')){
-    document.querySelector('html').setAttribute('data-theme',sessionStorage.getItem('selectedTheme'))
-}
+    themeSwitch.addEventListener("click", () => {
+        light_mode = localStorage.getItem('light_mode');
+        if (light_mode !== "active") {
+            enableLightmode();
+        } else {
+            disableLightmode();
+        }
+    });
+});

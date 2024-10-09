@@ -8,11 +8,25 @@
   align-content: center;
   align-items: center;
 
-    .theme-switch{
+    #theme-switch{
       width: 4vw;
       height: 3vw;
       border-radius: 10%;
       border: none;
       background-color: #313131;
+
+        svg{
+          &:last-child{
+            display: none;
+          }
+        }
     }
+}
+
+.light_mode #theme-switch svg:first-child{
+  display: none;
+}
+
+.light_mode #theme-switch svg:last-child{
+  display: block;
 }
