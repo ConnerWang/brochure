@@ -5,54 +5,54 @@
   background: url("../public/imgs/background.png") no-repeat;
   background-size: cover;
 
-    .page1_content{
-      background: transparent;
+  .page1_content{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logo1{
+      width: 30vw;
+      position: absolute;
+      margin-top:25vh;
+      margin-left: 10vw;
+    }
+
+    .first_page_pic{
       width: 100%;
-      height: 100%;
+      height: auto;
+    }
+
+
+    .page1_wrapper{
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: 2rem;
 
-        .logo1{
-          width: 30vw;
-          position: absolute;
-          margin-top:25vh;
-          margin-left: 10vw;
-        }
+      span{
+        width: 31.8rem;
+        font-family: oswald, sans-serif;
+        border-bottom: 2px solid var(--font-color);
+        font-size: 3vw;
+      }
 
-        .first_page_pic{
-          width: 100%;
-          height: auto;
-        }
-
-
-        .page1_wrapper{
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          gap: 2rem;
-
-            span{
-              width: 31.8rem;
-              font-family: oswald, sans-serif;
-              border-bottom: 2px solid #fff;
-              font-size: 3vw;
-            }
-
-            p{
-              width: 25vw;
-              flex-shrink: 0;
-              color: #FFF;
-              font-family: "Libre Baskerville", serif;
-              font-size: 0.7vw;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 232%;
-              letter-spacing: 0.132rem;
-            }
-        }
+      p{
+        width: 25vw;
+        flex-shrink: 0;
+        color: var(--font-color);
+        font-family: "Libre Baskerville", serif;
+        font-size: 0.7vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 232%;
+        letter-spacing: 0.132rem;
+      }
     }
+  }
 }
 
 /********** second page ************/
@@ -66,65 +66,68 @@
   align-items: center;
   gap: 1rem;
 
-    .sec_heading{
-      background: #863939;
-      width: 100%;
-      height: 12%;
+  .sec_heading{
+    background: var(--main-color);
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    align-self:start;
+
+    span{
+      color: var(--text-color);
+      font-family: "Times New Roman", serif;
+      font-size: 5vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .whatever {
+    position: relative;
+
+    .colon1{
+      width: 4.5vw;
+      height: 7.3vh;
+    }
+
+    .sec_content{
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      align-self:start;
 
-        span{
-          font-size: 5vw;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-        }
+      p{
+        font-family: "Times New Roman", serif;
+        width: 60%;
+        font-size: 1vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2em;
+        letter-spacing: 0.22rem;
+      }
     }
 
-    .whatever {
-      position: relative;
+    .colon2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
 
-        .colon1{
-          width: 4.5vw;
-          height: 7.3vh;
-        }
-
-        .sec_content{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-
-            p{
-              width: 60%;
-              font-size: 1vw;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 2em;
-              letter-spacing: 0.22rem;
-            }
-        }
-
-        .colon2 {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-
-            img{
-              width: 4.5vw;
-              height: 7.3vh;
-            }
-        }
+      img{
+        width: 4.5vw;
+        height: 7.3vh;
+      }
     }
+  }
 
-    .sec_img {
-      height:35%;
+  .sec_img {
+    height:35%;
 
-        img{
-          width: 30vw;
-        }
+    img{
+      width: 30vw;
     }
+  }
 }
 
 /********** third page ************/
@@ -136,58 +139,58 @@
   flex-direction: column;
   justify-content: space-between;
 
-    .third_pic{
+  .third_pic{
+    width: 100%;
+    height: 100%;
+  }
+
+  .third_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    button{
+      background: transparent;
+      border: none;
+      transition: transform 0.4s ease;
+
+      span{
+        font-family: "Libre Baskerville", serif;
+        text-transform: uppercase;
+        font-size: 4vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &:hover{
+        transform: scale(0.9);
+      }
+    }
+
+    .third_img{
+      background-size: cover;
+      height: 103rem;
       width: 100%;
-      height: 100%;
     }
 
-    .third_content{
+    .third_heading{
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      width: 100%;
+      justify-content: space-between;
       align-items: center;
-      margin-bottom: 4rem;
 
-        button{
-          background: transparent;
-          border: none;
-          transition: transform 0.4s ease;
-
-            span{
-              font-family: "Libre Baskerville", serif;
-              text-transform: uppercase;
-              font-size: 4vw;
-              font-style: normal;
-              font-weight: 400;
-              line-height: normal;
-            }
-
-            &:hover{
-              transform: scale(0.9);
-            }
-        }
-
-        .third_img{
-          background-size: cover;
-          height: 103rem;
-          width: 100%;
-        }
-
-        .third_heading{
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-          align-items: center;
-
-            span{
-              font-family: "Libre Baskerville", serif;
-              font-size: 2vw;
-              font-style: normal;
-              font-weight: 400;
-              line-height: normal;
-            }
-        }
+      span{
+        font-family: "Libre Baskerville", serif;
+        font-size: 2vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
     }
+  }
 }
 
 /********** First page of Sec************/
@@ -200,56 +203,56 @@
     grid-auto-columns: 1fr 1fr;
     height: 100vh;
 
-      .column-1{
-        height: 100vh;
-        grid-area: column-1;
+    .column-1{
+      height: 100vh;
+      grid-area: column-1;
 
-          img{
-            max-height: 99vh;
-            width: 15.8vw;
-          }
+      img{
+        max-height: 99vh;
+        width: 15.8vw;
+      }
+    }
+
+    .column-2{
+      margin-top: 5vh;
+      grid-area: column-2;
+
+      img{
+        position: absolute;
+        height: 90vh;
+        width: 16.6vw;
       }
 
-      .column-2{
-        margin-top: 5vh;
-        grid-area: column-2;
+      .column_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
 
-          img{
-            position: absolute;
-            height: 90vh;
-            width: 16.6vw;
-          }
+        span{
+          margin-top: 1vh;
+          text-align: center;
+          font-family: Oswald, serif;
+          font-size: 1.7vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.170em;
+        }
 
-          .column_content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 4rem;
-
-              span{
-                margin-top: 1vh;
-                text-align: center;
-                font-family: Oswald, serif;
-                font-size: 1.7em;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                letter-spacing: 0.170em;
-              }
-
-              p{
-                width: 80%;
-                height: 70vh;
-                color: #FFF;
-                font-size: 1.3rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 232%; /* 3.48rem */
-                letter-spacing: 0.065em;
-              }
-          }
+        p{
+          width: 80%;
+          height: 70vh;
+          color: var(--font-color);
+          font-size: 0.9vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 232%; /* 3.48rem */
+          letter-spacing: 0.065em;
+        }
       }
+    }
   }
 }
 
@@ -262,66 +265,66 @@
     width: 100%;
     height: 100%;
 
-      .header h1{
-        font-family: "Libre Baskerville", serif;
-        font-size: 2.5vw;
+    .header h1{
+      font-family: "Libre Baskerville", serif;
+      font-size: 2.5vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.384rem;
+      position: relative;
+      display: inline-block;
+      top:4vh;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.13vh;
+        background-color: var(--font-color);
+        left: 0;
+      }
+
+      &::before {
+        top:-1.5vh ;
+      }
+
+      &::after {
+        bottom: -1.5vh;
+      }
+    }
+
+    .sec_content{
+      margin-top: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1{
+        width: 15.6vw;
+        text-align: center;
+        font-family: Oswald, serif;
+        font-size: 1.4vw;
         font-style: normal;
         font-weight: 400;
+        margin-bottom: 1.2vh;
+        line-height: 5.7vh;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      p{
+        width: 15.6vw;
+        text-align: center;
+        font-size: 0.52vw;
+        font-style: normal;
+        font-weight: 300;
         line-height: normal;
-        letter-spacing: 0.384rem;
-        position: relative;
-        display: inline-block;
-        top:4vh;
-
-          &::before,
-          &::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 0.13vh;
-            background-color: white;
-            left: 0;
-          }
-
-          &::before {
-            top:-1.5vh ;
-          }
-
-          &::after {
-            bottom: -1.5vh;
-          }
+        letter-spacing: 0.112em;
       }
-
-      .sec_content{
-        margin-top: 20vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-          h1{
-            width: 15.6vw;
-            text-align: center;
-            font-family: Oswald, serif;
-            font-size: 1.4vw;
-            font-style: normal;
-            font-weight: 400;
-            margin-bottom: 1.2vh;
-            line-height: 5.7vh;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-          }
-
-          p{
-            width: 15.6vw;
-            text-align: center;
-            font-size: 0.52vw;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
-            letter-spacing: 0.112em;
-          }
-      }
+    }
   }
 }
 
@@ -334,42 +337,43 @@
     flex-direction: row;
     justify-content: flex-end;
 
-      .third_title{
-        font-family: Oswald, serif;
-        font-size: 1.3vw;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.135em;
+    .third_title{
+      color: var(--text-color);
+      font-family: Oswald, serif;
+      font-size: 1.3vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.135em;
 
-          &::after{
-            display: block;
-            content: "";
-            width: 120%;
-            margin-top:1rem;
-            height: 0.2rem;
-            background-color: #863939;
-            margin-left: 1rem;
-            position: relative;
-            vertical-align: middle;
-          }
-
-          &::before {
-            content: "";
-            display: inline-block;
-            width: 3rem;
-            height: 3rem;
-            background-color: #863939;
-            border-radius: 50%;
-            position: relative;
-            top: 3.3rem;
-            margin-right: 0.4rem;
-          }
+      &::after{
+        display: block;
+        content: "";
+        width: 120%;
+        margin-top:1rem;
+        height: 0.2rem;
+        background-color: var(--text-color);
+        margin-left: 1rem;
+        position: relative;
+        vertical-align: middle;
       }
 
-      .flag{
-        width: 6vw;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        background-color: var(--text-color);
+        border-radius: 50%;
+        position: relative;
+        top: 3.3rem;
+        margin-right: 0.4rem;
       }
+    }
+
+    .flag{
+      width: 6vw;
+    }
   }
 
   .wrap-3{
@@ -380,32 +384,32 @@
     align-items: center;
     gap:5rem;
 
-      .qrcode{
-        mix-blend-mode: lighten;
-        width: 7vw;
-      }
+    .qrcode{
+      mix-blend-mode: lighten;
+      width: 7vw;
+    }
 
-      ul{
-        color: var(--text-color);
-        font-family: Oswald, serif;
-        font-size: 1.1vw;
+    ul{
+      color:  var(--text-color);
+      font-family: Oswald, serif;
+      font-size: 1.1vw;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0.284rem;
+
+      li{
+        color:  var(--text-color);
+        font-family: "Times New Roman", serif;
+        font-size: 0.7vw;
         font-style: normal;
-        font-weight: 400;
-        letter-spacing: 0.284rem;
-
-          li{
-            color: var(--text-color);
-            font-family: "Times New Roman", serif;
-            font-size: 0.5vw;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 2.9em;
-            letter-spacing: 0.124em;
-          }
+        font-weight: 600;
+        line-height: 2.9em;
+        letter-spacing: 0.124em;
       }
+    }
 
-      .location_img img{
-        width: 85%;
-      }
+    .location_img img{
+      width: 85%;
+    }
   }
 }
