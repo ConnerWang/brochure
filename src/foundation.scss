@@ -29,7 +29,7 @@
 
 
         .page1_wrapper{
-          width: 100%;
+          width: 80%;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -219,7 +219,7 @@
         grid-area: column-1;
 
           img{
-            height: 130rem;
+            height: 95%;
             width: 100%;
           }
       }
@@ -230,14 +230,15 @@
 
           img{
             position: absolute;
-            height: 110rem;
+            height: 90%;
             width: 15%;
           }
 
           .column_content{
+            height: 90%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
 
               span{
@@ -254,11 +255,12 @@
               p{
                 width: 80%;
                 color: var(--font-color);
-                font-size: 1.6rem;
+                font-size: 0.7vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 232%; /* 3.48rem */
                 letter-spacing: 0.065em;
+                overflow: hidden;
               }
           }
       }
