@@ -1,8 +1,8 @@
-import './src/foundation.scss'
-import './src/style.scss'
-import './src/footer.scss'
-import './src/header.scss'
-import './src/responsive.scss'
+import '../css/foundation.scss'
+import '../css/style.scss'
+import '../css/footer.scss'
+import '../css/header.scss'
+import '../css/responsive.scss'
 
 
 
