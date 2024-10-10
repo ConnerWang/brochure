@@ -1,0 +1,270 @@
+@media screen and (max-width: 767px) {
+  .container{
+    display: grid;
+    grid-template-areas:
+            "header"
+            "first_page"
+            "sec_page"
+            "third_page"
+            "footer";
+    grid-template-rows: auto .7fr 1fr .7fr auto;
+    grid-template-columns: 1fr;
+
+    header {
+      grid-area: header;
+      display: flex;
+      justify-content: space-between;
+
+      .header-container{
+        width: 100%;
+      }
+    }
+
+    footer {
+      grid-area: footer;
+    }
+
+    .first_page, .first_page_sec {
+      grid-area: first_page;
+    }
+
+    .sec_page, .sec_page_sec {
+      grid-area: sec_page;
+    }
+
+    .third_page, .third_page_sec {
+      grid-area: third_page;
+    }
+  }
+
+  .first_page {
+    .page1_content {
+      .logo1{
+        margin-top: 40%;
+        margin-left: 30%;
+        width: 50vw;
+      }
+    }
+
+  }
+
+  .first_page .page1_content{
+    justify-content: space-between;
+
+    .page1_wrapper{
+      span{
+        font-size: 2.6rem;
+
+        &::after{
+          content: "";
+          display: block;
+          width: 50%;
+          height: 0.15rem;
+          background-color:var(--font-color);
+        }
+      }
+      p{
+        font-size: 0.7rem;
+        width: 50vw;
+
+      }}
+  }
+
+  .sec_page {
+    .sec_heading {
+      display: flex;
+      justify-content:center;
+    }
+    #sec_title{
+      font-size: 5rem;
+    }
+
+    .sec_img{
+      img{
+        width: 50vw;
+      }
+    }
+
+    .whatever .sec_content p{
+      font-size:1.3rem;
+    }
+  }
+
+  .third_page .third_content button span{
+    font-size: 5rem;
+  }
+  .third_page .third_content .third_heading span{
+    font-size: 1.4rem;
+  }
+
+  .first_page_sec .wrap .column-2 .column_content {
+    height: 83%;
+  }
+  .first_page_sec .wrap .column-2 .column_content p{
+    font-size: 1.1rem;
+    line-height: 3em;
+    overflow: hidden;
+
+  }
+
+  .first_page_sec .wrap .column-2 img{
+    height: 90%;
+    width: 48%;
+  }
+
+  .first_page_sec .wrap .column-1 img{
+    height: 100%;
+  }
+
+  .third_page_sec .third_content span{
+    font-size: 2rem;
+  }
+}
+/***************************************8*/
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+            "header"
+            "first_page"
+            "sec_page"
+            "third_page"
+            "footer";
+    grid-template-rows: auto .7fr 1fr 1fr auto;
+    grid-template-columns: 1fr;
+
+    header {
+      grid-area: header;
+      display: flex;
+      justify-content: space-between;
+
+      .header-container {
+        width: 100%;
+      }
+    }
+
+    footer {
+      grid-area: footer;
+    }
+
+    .first_page, .first_page_sec {
+      grid-area: first_page;
+    }
+
+    .sec_page, .sec_page_sec {
+      grid-area: sec_page;
+    }
+
+    .third_page, .third_page_sec {
+      grid-area: third_page;
+    }
+
+    .first_page {
+      .page1_content {
+        .logo1{
+          margin-top: 40%;
+          margin-left: 30%;
+          width: 70vw;
+        }
+      }
+
+    }
+
+    .first_page .page1_content{
+      justify-content: space-between;
+
+      .page1_wrapper{
+        span{
+          font-size: 4.6rem;
+
+          &::after{
+            content: "";
+            display: block;
+            width: 70%;
+            height: 0.15rem;
+            background-color:var(--font-color);
+          }
+        }
+        p{
+          font-size: 1.3rem;
+          width: 60vw;
+
+        }}
+    }
+
+    .first_page_sec .wrap .column-1 img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .first_page_sec .wrap .column-2 img{
+      width: 50%;
+    }
+
+    .first_page_sec .wrap .column-2 .column_content p{
+      font-size: 1.3rem;
+      line-height: 3em;
+      overflow: hidden;
+
+    }
+  }
+}
+
+
+/********************************************/
+@media screen and (min-width: 1201px) and (max-width: 1439px) {
+  .container{
+    display: grid;
+    grid-template-areas:
+     "header header header"
+     "first_page sec_page third_page"
+     "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    header {
+      grid-area: header;
+    }
+
+    footer {
+      grid-area: footer;
+    }
+
+    .first_page, .first_page_sec{
+      grid-area: first_page;
+    }
+
+    .sec_page, .sec_page_sec{
+      grid-area: sec_page;
+    }
+
+    .third_page, .third_page_sec{
+      grid-area: third_page;
+    }
+
+    .first_page_sec .wrap .column-2 .column_content span{
+      font-size: 3.4rem;
+    }
+    .first_page_sec .wrap .column-2 .column_content p{
+      font-size:50%;
+      line-height: 3em;
+      overflow: hidden;
+
+    }
+
+
+    .first_page_sec .wrap .column-2 img{
+      height: 90%;
+      width: 14%;
+    }
+
+    .first_page_sec .wrap .column-1 img{
+      height: 100%;
+    }
+
+    .sec_page .sec_heading span{
+      font-size: 5.6rem;
+    }
+  }
+}
