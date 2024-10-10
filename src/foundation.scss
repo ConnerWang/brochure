@@ -170,7 +170,7 @@
             span{
               font-family: "Libre Baskerville", serif;
               text-transform: uppercase;
-              font-size: 4vw;
+              font-size: 10.2rem;
               font-style: normal;
               font-weight: 400;
               line-height: normal;
@@ -190,12 +190,12 @@
         .third_heading{
           display: flex;
           width: 100%;
-          justify-content: space-between;
+          justify-content: space-around;
           align-items: center;
 
             span{
               font-family: "Libre Baskerville", serif;
-              font-size: 2vw;
+              font-size: 2rem;
               font-style: normal;
               font-weight: 400;
               line-height: normal;
@@ -219,8 +219,8 @@
         grid-area: column-1;
 
           img{
-            max-height: 99vh;
-            width: 15.8vw;
+            height: 130rem;
+            width: 100%;
           }
       }
 
@@ -230,8 +230,8 @@
 
           img{
             position: absolute;
-            height: 90vh;
-            width: 16.6vw;
+            height: 110rem;
+            width: 15%;
           }
 
           .column_content{
@@ -241,10 +241,10 @@
             align-items: center;
 
               span{
-                margin-top: 1vh;
+                margin-top: 2%;
                 text-align: center;
                 font-family: Oswald, serif;
-                font-size: 1.7vw;
+                font-size: 3.4rem;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -253,9 +253,8 @@
 
               p{
                 width: 80%;
-                height: 70vh;
                 color: var(--font-color);
-                font-size: 0.9vw;
+                font-size: 1.6rem;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 232%; /* 3.48rem */
@@ -277,7 +276,7 @@
 
       .header h1{
         font-family: "Libre Baskerville", serif;
-        font-size: 2.5vw;
+        font-size: 4.5rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -313,10 +312,9 @@
         align-items: center;
 
           h1{
-            width: 15.6vw;
             text-align: center;
             font-family: Oswald, serif;
-            font-size: 1.4vw;
+            font-size: 3.6rem;
             font-style: normal;
             font-weight: 400;
             margin-bottom: 1.2vh;
@@ -326,9 +324,8 @@
           }
 
           p{
-            width: 15.6vw;
             text-align: center;
-            font-size: 0.52vw;
+            font-size: 1.3rem;
             font-style: normal;
             font-weight: 300;
             line-height: normal;
@@ -350,11 +347,10 @@
       .third_title{
         color: var(--text-color);
         font-family: Oswald, serif;
-        font-size: 1.3vw;
+        font-size: 3rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        letter-spacing: 0.135em;
 
           &::after{
             display: block;
@@ -382,7 +378,7 @@
       }
 
       .flag{
-        width: 6vw;
+        width: 15%;
       }
   }
 
@@ -396,13 +392,13 @@
 
       .qrcode{
         mix-blend-mode: multiply;
-        width: 7vw;
+        width: 20%;
       }
 
       ul{
         color:  var(--text-color);
         font-family: Oswald, serif;
-        font-size: 1.1vw;
+        font-size: 3.3rem;
         font-style: normal;
         font-weight: 400;
         letter-spacing: 0.284rem;
@@ -410,7 +406,7 @@
           li{
             color:  var(--text-color);
             font-family: "Times New Roman", serif;
-            font-size: 0.7vw;
+            font-size: 1.5rem;
             font-style: normal;
             font-weight: 600;
             line-height: 2.9em;

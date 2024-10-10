@@ -91,7 +91,33 @@
   }
 
   .third_page .third_content button span{
+    font-size: 5rem;
+  }
+  .third_page .third_content .third_heading span{
+    font-size: 1.4rem;
+  }
 
+  .first_page_sec .wrap .column-2 .column_content {
+    height: 83%;
+  }
+  .first_page_sec .wrap .column-2 .column_content p{
+    font-size: 1.1rem;
+    line-height: 3em;
+    overflow: hidden;
+
+  }
+
+  .first_page_sec .wrap .column-2 img{
+    height: 90%;
+    width: 48%;
+  }
+
+  .first_page_sec .wrap .column-1 img{
+    height: 100%;
+  }
+
+  .third_page_sec .third_content span{
+    font-size: 2rem;
   }
 }
 /***************************************8*/
